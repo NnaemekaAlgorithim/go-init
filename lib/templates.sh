@@ -1,12 +1,14 @@
 #!/bin/bash
 
 render_template() {
-  local src=$1
-  local dst=$2
-  local project=$3
-  local module=$4
+  local src=$1 dst=$2 project=$3 module=$4
 
   mkdir -p "$(dirname "$dst")"
+
+  if [ ! -f "$src" ]; then
+    print_error "Template missing: $src"
+    return 1
+  fi
 
   sed -e "s|{{PROJECT_NAME}}|$project|g" \
       -e "s|{{MODULE_NAME}}|$module|g" \

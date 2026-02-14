@@ -27,3 +27,15 @@ go-init/
 ├── LICENSE
 └── .gitignore
 ```
+
+## Usage
+
+### Interactive (recommended for first time)
+```bash
+curl -sSL https://raw.githubusercontent.com/NnaemekaAlgorithim/go-init/main/install.sh | bash
+```
+
+### None Interactive Mode
+```bash
+curl -sSL https://raw.githubusercontent.com/NnaemekaAlgorithim/go-init/main/install.sh | bash -s -- my-cool-api
+```

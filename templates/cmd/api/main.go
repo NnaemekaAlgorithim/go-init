@@ -8,7 +8,6 @@ import (
 
 	"{{MODULE_NAME}}/internal/db"
 
-	"github.com/$(whoami)/${PROJECT}/internal/db"
 	"github.com/gin-gonic/gin"
 )
 
