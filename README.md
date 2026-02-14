@@ -9,7 +9,7 @@ go-init/
 │   ├── utils.sh            # Shared helpers
 │   ├── structure.sh        # Folder creation
 │   ├── templates.sh        # Rendering templates
-│   ├── go.sh               # Go-specific files (main, store, etc.)
+│   ├── go_init.sh               # Go-specific files (main, store, etc.)
 │   └── docker.sh           # Docker + compose
 ├── templates/
 │   ├── sqlc.yaml
